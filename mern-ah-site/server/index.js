@@ -25,8 +25,8 @@ app.use(
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-app.use(`/idol`, idolRouter);
-app.use(`/video`, videoRouter);
+app.use(`/api/idol`, idolRouter);
+app.use(`/api/video`, videoRouter);
 
 // deploy
 if (process.env.NODE_ENV === "production") {
