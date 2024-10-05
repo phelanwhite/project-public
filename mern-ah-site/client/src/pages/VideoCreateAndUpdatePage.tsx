@@ -65,7 +65,7 @@ const VideoCreateAndUpdatePage = () => {
   const getVideoByIdResult = useQuery({
     queryKey: ["video", id],
     queryFn: async () => {
-      const url = `idol/get-id/${id}`;
+      const url = `video/get-id/${id}`;
       const response = await axiosConfig.get(url);
       return response;
     },
